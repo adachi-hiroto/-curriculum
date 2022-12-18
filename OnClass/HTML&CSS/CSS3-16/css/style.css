@@ -1,0 +1,68 @@
+.inner{
+    width: 1100px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.main_content{
+    width: 800px;
+}
+.main_content h2{
+    background-image: url(../img/mark1.png);
+    background-repeat: no-repeat;
+    background-position: left 8px center;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 12px 0 12px 30px;
+    margin: 10px 0;
+}
+.main_content h2:nth-child(1){
+    margin: 0;
+}
+.main_content h3{
+    font-size: 14px;
+    letter-spacing: 2px;
+    background: linear-gradient(#fff,#ebebeb);
+    border: 1px solid #ccc;
+    padding: 11px 0 11px 12px;
+    margin: 15px 0 10px 0;
+}
+.main_content h3:nth-child(0){
+    margin-top: 0;
+}
+.main_content h4{
+    font-size: 14px;
+    line-height: 28px;
+    margin: 11px 0 0 12px;
+    padding-right: 10px;
+}
+.main_content p{
+    font-size: 14px;
+    letter-spacing: .3px;
+    line-height: 28px;
+    margin-left: 12px;
+}
+.main_content p a{
+    color: black;
+}
+dt{
+    font-size: 15px;
+    font-weight: 600;
+}
+dd{
+    font-size: 14px;
+}
+dd span{
+    font-size: 10px;
+    border-radius: 2px;
+    padding: 0 4px;
+    background-color: red;
+    color: #fff;
+}
+
+.sub_content{
+    width: 250px;
+}
