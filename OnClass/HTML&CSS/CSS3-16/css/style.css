@@ -1,6 +1,7 @@
 .inner{
     width: 1100px;
     margin: 10px auto;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: row-reverse;
 }
@@ -141,3 +142,29 @@ dd span{
 }
 
 /* footer */
+footer{
+    width: 100%;
+    margin: 0 auto; 
+    background-color: black;
+    text-align: center;
+    padding: 5px 0;
+}
+footer small{
+    font-size: smaller;
+}
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+}
+footer p:nth-child(1){
+    margin-top: 0;
+}
+footer p a{
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+footer p a:hover{
+    color: black;
+}
