@@ -5,6 +5,7 @@
     flex-direction: row-reverse;
 }
 
+/* main */
 .main_content{
     width: 800px;
     margin-left: 40px;
@@ -76,36 +77,67 @@ dd span{
     color: #fff;
 }
 
+/* sub */
 .sub_content{
-    width: 250px;
-    height: 420px;
-}
-.sub_menu{
-    height: 230px;
-    background-color: #E4E4E4;
-    margin-bottom: 15px;
-    padding: 15px;
+    width: 23%;
+    padding-bottom: 30px;
 }
 .sub_content h2{
     border-left: 3px solid black;
-    padding-left: 6px;
+    padding-left: 8px;
+    margin-top: 5px;
     font-size: 14px;
+}
+
+/* sub menu */
+.sub_menu{
+    background-color: #E4E4E4;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 15px;
 }
 .sub_menu ul{
     margin-top: 15px;
+    list-style: none;
 }
 .sub_menu li{
-    width: 215px;
-    height: 30px;
-    list-style: none;
     background-color: #fff;
     border-bottom: 1px solid #CCCCCC;
-    padding-left: 6px;
 }
 .sub_menu li a{
+    display: block;
     font-size: 14px;
-    line-height: 28px;
-    letter-spacing: 2px;
+    padding: 10px;
+    letter-spacing: 1px;
     text-decoration: none;
     color: black;
 }
+.sub_menu li a:hover{
+    background-color: black;
+    color: #fff;
+}
+
+/* box1 */
+.box1{
+    background-color: #E4E4E4;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.box1 h2{
+    margin-bottom: 15px;
+}
+.box1 p{
+    font-size: 14px;
+    line-height: 28px;
+}
+
+/* box2 */
+.box2 h2{
+    margin-bottom: 30px;
+}
+.box2 p{
+    font-size: 14px;
+}
+
+/* footer */
