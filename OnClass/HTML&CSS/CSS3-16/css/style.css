@@ -112,6 +112,7 @@ dd span{
     letter-spacing: 1px;
     text-decoration: none;
     color: black;
+    transition: .5s;
 }
 .sub_menu li a:hover{
     background-color: black;
