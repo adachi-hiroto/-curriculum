@@ -48,9 +48,9 @@
 .main_content p a{
     color: black;
 }
-dt{
-    font-size: 15px;
-    font-weight: 600;
+dt {
+    font-weight: bold;
+
 }
 dd{
     font-size: 14px;
