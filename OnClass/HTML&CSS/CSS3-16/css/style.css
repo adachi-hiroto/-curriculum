@@ -77,4 +77,10 @@ dd span{
 
 .sub_content{
     width: 250px;
+    height: 420px;
+}
+.sub_menu{
+    height: 230px;
+    background-color: #ccc;
+    list-style: none;
 }
