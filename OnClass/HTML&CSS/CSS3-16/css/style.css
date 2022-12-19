@@ -17,7 +17,7 @@
     font-size: 14px;
     letter-spacing: 2px;
     padding: 12px 0 12px 30px;
-    margin: 10px 0;
+    margin: 12px 0;
 }
 .main_content h2:nth-child(1){
     margin: 0;
@@ -48,12 +48,24 @@
 .main_content p a{
     color: black;
 }
+dl{
+    margin-left: 12px;
+    overflow: auto;
+    height: 135px;
+}
 dt {
+    float: left;
+}
+dt time{
     font-weight: bold;
-
+    font-size: 14px;
 }
 dd{
-    font-size: 14px;
+    font-size: 13px;
+    line-height: 16px;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 0px 0 5px 130px;
+    margin-bottom: 5px;
 }
 dd span{
     font-size: 10px;
