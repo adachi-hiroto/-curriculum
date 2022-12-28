@@ -68,14 +68,20 @@ header nav ul li a{
 footer ul{
     width: 100%;
     padding: 20px;
-    text-align: center;
     background-color: #53514C;
 }
 footer ul li{
-    margin: 10px 0 0 0;
+    width: 300px;
+    height: 30px;
+    border: white 1px solid;
+    margin: 10px auto;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
 }
 footer ul li a{
+    font-size: 14px;
+    line-height: 30px;
     text-decoration: none;
     color: white;
-    border: white 1px solid;
 }
