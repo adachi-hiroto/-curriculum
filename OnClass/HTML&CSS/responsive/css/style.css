@@ -98,8 +98,12 @@ h2{
     margin-left: 0;
 }
 .gourmet p{
-    margin: 10px;
+    margin: 10px 0;
     font-size: 14px;
+}
+.gourmet p::before{
+    content: "-";
+    padding: 0 10px;
 }
 
 /* footer */
