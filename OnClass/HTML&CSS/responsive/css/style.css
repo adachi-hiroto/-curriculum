@@ -34,13 +34,14 @@ header nav ul li a{
     width: 100%;
     margin: 0 auto;
 }
-
-/* information */
-.information h2{
+h2{
     padding: 10px;
+    font-weight: lighter;
     background-color: #B99465;
     color: white;
 }
+
+/* information */
 .information ul li{
     padding: 10px;
 }
@@ -59,13 +60,39 @@ header nav ul li a{
 }
 
 /* gourmet */
-.gourmet h2{
-    padding: 10px;
-    background-color: #B99465;
-    color: white;
+.gourmet_content{
+    padding: 5px;
 }
 .gourmet img{
     width: 100%;
+    margin-top: 10px;
+}
+.gourmet .container{
+    width: 100%;
+    border-left: 4px solid #402805;
+    padding: 5px 10px;
+}
+.gourmet .container h3{
+    margin-bottom: 5px;
+}
+.gourmet .container ul{
+    display: flex;
+}
+.gourmet .container ul li{
+    list-style: none;
+    background-color: #B99465;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;  
+    color: white;
+    font-size: 10px;
+}
+.gourmet .container ul li:nth-child(1){
+    margin-left: 0;
+}
+.gourmet p{
+    margin: 10px;
+    font-size: 14px;
 }
 
 /* footer */
