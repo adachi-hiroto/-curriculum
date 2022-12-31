@@ -6,19 +6,41 @@
 /* header */
 header{
     width: 100%;
-    padding: 20px;
+    margin: 0 auto;
+}
+.header_content{
     display: flex;
     justify-content: space-between;
+    padding: 15px;
 }
-header h1 a img{
+.header_content h1 a img{
     width: 200px;
     height: 25px;
 }
-header nav ul{
-    width: 100%;
-    justify-content: space-between;
+.header_content nav .hamburger_menu{
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
 }
-header nav ul li a{
+.header_content nav .hamburger_menu span{
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: 14px;
+    width: 60%;
+    height: 3px;
+    border-radius: 2px;
+    content: "";
+    background-color: #666666;
+}
+.header_content nav .hamburger_menu span:nth-child(1){
+    top: 12px;
+}
+.header_content nav .hamburger_menu span:nth-child(2){
+    top: 22px;
+}
+.header_content nav ul li a{
     display: none;
     text-decoration: none;
     color: #9c9b98;
@@ -76,7 +98,7 @@ h2{
 .gourmet .container{
     width: 100%;
     border-left: 4px solid #402805;
-    padding: 5px 10px;
+    padding: 5px 0 5px 10px;
     margin-top: 10px;
 }
 .gourmet .container h3{
@@ -107,8 +129,11 @@ h2{
 }
 
 /* footer */
-footer ul{
+footer{
     width: 100%;
+    margin: 0 auto;
+}
+footer ul{
     padding: 20px;
     background-color: #53514C;
 }
@@ -141,4 +166,21 @@ footer p{
 }
 footer p small{
     font-size: 10px;
+}
+
+@media (min-width: 768px){
+    /* header */
+    .header_content h1 a img{
+        width: 250px;
+        height: 30px;
+    }
+    .hamburger_menu{
+        display: none;
+    }
+    .header_content nav ul{
+        display: flex;
+    }
+    .header_content nav ul li a{
+        display: block;
+    }
 }
