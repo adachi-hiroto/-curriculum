@@ -5,8 +5,12 @@
 
 /* header */
 header{
+    position: fixed;
     width: 100%;
     margin: 0 auto;
+    height: 60px;
+    z-index: 100;
+    background-color: #fff;
 }
 .header_content{
     display: flex;
@@ -41,25 +45,55 @@ header{
     top: 22px;
 }
 .header_content nav ul{
-    display: none;
-    gap: 10px;
+    margin: 25px 10px;
 }
 .header_content nav ul li a{
     display: none;
-    padding: 2px 15px;
+    padding: 10px 20px;
     text-decoration: none;
     color: #9c9b98;
-    line-height: 30px;
     border-radius: 2px;
 }
 .header_content nav ul li a:hover{
     background-color: #B99465;
     color: #fff;
 }
+/* pc */
+@media (min-width: 768px){
+    header{
+        height: 80px;
+    }
+    .header_content{
+        height: 80px;
+        padding: 0;
+    }
+    .header_content h1 a img{
+        width: 250px;
+        height: 30px;
+        margin: 30px 0 0 20px;
+    }
+    .hamburger_menu{
+        display: none;
+    }
+    .header_content nav ul{
+        display: flex;
+    }
+    .header_content nav ul li a{
+        display: block;
+    }
+}
 
 /* keyvisual */
 .keyvisual img{
     width: 100%;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+/* pc */
+@media (min-width: 768px){
+    .keyvisual img{
+        padding-top: 80px;
+    }
 }
 
 /* main */
@@ -90,6 +124,24 @@ h2{
 }
 .information ul li p::before{
     content: "▶︎";
+}
+/* pc */
+@media (min-width: 768px){
+    .information{
+        margin-bottom: 50px;
+    }
+    .information ul li{
+        padding: 5px 10px;
+    }
+    .information ul li time{
+        font-size: 14px;
+    }
+    .information ul li p{
+        display: inline-block;
+    }
+    .information ul li p::before{
+        margin: 0 5px;
+    }
 }
 
 /* gourmet */
@@ -138,6 +190,31 @@ h2{
     content: "-";
     padding: 0 10px;
 }
+/* pc */
+@media (min-width: 768px){
+    .gourmet{
+        margin-bottom: 70px;
+    }
+    .gourmet_content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .gourmet article{
+        margin-top: 0;
+    }
+    .gourmet .container h3{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .gourmet .container ul li{
+        font-size: 12px;
+    }
+    .gourmet p{
+        font-size: 16px;
+        font-weight: lighter;
+    }
+}
 
 /* footer */
 footer{
@@ -152,12 +229,19 @@ footer ul li{
     width: 300px;
     height: 30px;
     border: white 1px solid;
+    border-radius: 2px;
     margin: 10px auto;
     padding: 0px;
     list-style: none;
     text-align: center;
+    line-height: 30px;
+}
+footer ul li a:hover{
+    background-color: #fff;
+    color: #53514C;
 }
 footer ul li a{
+    display: block;
     font-size: 14px;
     line-height: 30px;
     text-decoration: none;
@@ -181,41 +265,23 @@ footer p small{
 
 /* pc */
 @media (min-width: 768px){
-    /* header */
-    .header_content{
-        height: 80px;
-        padding: 0;
+    footer ul{
+        text-align: center;
     }
-    .header_content h1 a img{
-        width: 250px;
-        height: 30px;
-        margin: 30px 0 0 20px;
-    }
-    .hamburger_menu{
-        display: none;
-    }
-    .header_content nav ul{
-        display: flex;
-    }
-    .header_content nav ul li a{
-        display: block;
-        line-height: 80px;
-    }
-
-    /* information */
-    .information{
-        margin-bottom: 50px;
-    }
-    .information ul li{
-        padding: 5px 10px;
-    }
-    .information ul li time{
-        font-size: 14px;
-    }
-    .information ul li p{
+    footer ul li{
         display: inline-block;
+        width: 120px;
+        height: 30px;
+        margin: 0 10px;
     }
-    .information ul li p::before{
-        margin: 0 5px;
+    footer ul li a{
+        font-size: 16px;
+    }
+    footer .logo a img{
+        width: 200px;
+        height: 25px;
+    }
+    footer p small{
+        font-size: 11px;
     }
 }
