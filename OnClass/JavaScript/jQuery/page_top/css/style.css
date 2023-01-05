@@ -1,0 +1,29 @@
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+.inner{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ヘッダー */
+.header_inner{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* メイン */
+.main_inner{
+    height: 800px;
+}
