@@ -4,7 +4,6 @@ a {
     text-decoration: none;
   }
   
-  ul,
   li {
     list-style: none;
   }
@@ -32,8 +31,7 @@ a {
   }
   
   
-  /* ヘッダー */
-  
+  /* header */
   
   .header {
     background-color: white;
