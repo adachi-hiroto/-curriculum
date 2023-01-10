@@ -10,3 +10,28 @@ body{
     color: #171717;
     font-family: 'Noto Serif', 'Noto Serif JP', serif;
 }
+img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.section-wrapper{
+    padding: 100px 0 70px;
+}
+.section-title{
+    max-width: 1000px;
+    color: #282F35;
+    font-size: 6em;
+    font-style: italic;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+}
+.section-title::after{
+    content: "";
+    display: inline-block;
+    background-color: #282F35;
+    width: 200px;
+    height: 5px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
