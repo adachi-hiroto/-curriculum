@@ -21,7 +21,7 @@ img{
 .section-title{
     max-width: 1000px;
     color: #282F35;
-    font-size: 6em;
+    font-size: 6rem;
     font-style: italic;
     margin: 0 auto 80px;
     padding: 0 20px;
@@ -34,4 +34,232 @@ img{
     height: 5px;
     margin-left: 5px;
     vertical-align: middle;
+}
+.section-inner{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.section-bottom{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 9rem;
+    opacity: .05;
+}
+
+.link-btn{
+    display: block;
+    width: 235px;
+    line-height: 60px;
+    margin: 0 auto 70px;
+    background-color: #f7d43f;
+    box-shadow: 0 0 6px #1b1310;
+    border-radius: 30px;
+    text-align: center;
+    color: #171717;
+    text-decoration: none;
+    transition: .3s;
+}
+.link-btn:hover{
+    opacity: .7;
+    transition: .3s;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-white{
+    color: #fff;
+}
+.text-white::after{
+    background-color: #fff;
+}
+
+/* -------------------------- */
+/* header
+/* -------------------------- */
+.header{
+    padding: 19px 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    width: 100%;
+}
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; 
+    background-color: brown;
+}
+.header a{
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+    font-weight: bold;
+    font-style: italic;
+}
+.header a:hover{
+    opacity: 0.7;
+    transition: .3s;
+}
+.site-title{
+    font-size: 2.6rem;
+}
+.nav-list{
+    display: flex;
+}
+.nav-item{
+    margin-right: 30px;
+}
+.nav-item:last-of-type{
+    margin-right: 0;
+}
+.burger-btn{
+    display: none;
+}
+
+/* -------------------------- */
+/* first view
+/* -------------------------- */
+.fv{
+    height: 100vh;
+    min-height: 550px;
+    position: relative;
+    background-image: url(../images/fv-bgi_01@2x.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.main-copy{
+    position: absolute;
+    left: 120px;
+    bottom: 177px;
+    color: #fff;
+    font-weight: bold;
+}
+.en-copy{
+    font-size: 7rem;
+    margin-bottom: 31px;
+}
+.ja-copy{
+    font-size: 4rem;
+    text-align: center;
+}
+
+/* -------------------------- */
+/* concept
+/* -------------------------- */
+.concept-lead{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 60px;
+    font-weight: bold;
+    line-height: 1.7;
+}
+.concept-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.concept-text{
+    max-width: 440px;
+    line-height: 1.9;
+    font-weight: bold;
+}
+.concept-img-wrapper{
+    max-width: 440px;
+    margin-left: 20px;
+}
+
+/* -------------------------- */
+/* works
+/* -------------------------- */
+.bg-works{
+    background-image: url(../images/works-bgi@2x.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.works-list{
+    max-width: 1000px;
+    margin: 0 auto 80px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.works-item{
+    width: 32%;
+    background-color: #fff;
+}
+.works-item a{
+    color: #141414;
+    text-decoration: none;
+}
+.works-list-text{
+    padding: 25px 20px;
+}
+
+/* -------------------------- */
+/* service
+/* -------------------------- */
+.service-list{
+    display: flex;
+}
+.service-item{
+    list-style-type: none;
+    width: 33.3%;
+}
+.service1{
+    background-image: url(../images/service-img01@2x.jpg);
+}
+.service2{
+    background-image: url(../images/service-img02@2x.jpg);
+}
+.service3{
+    background-image: url(../images/sevice-img03@2x.jpg);
+}
+.service-item a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    list-style: 320px;
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    transition: .3s;
+}
+.service-item a:hover{
+    background-color: rgba(40, 47, 53, .7);
+    transition: .3s;
+}
+
+/* -------------------------- */
+/* contact
+/* -------------------------- */
+.bg-contact{
+    background-image: url(../images/contact-bgi@2x.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.contact-text{
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+/* -------------------------- */
+/* footer
+/* -------------------------- */
+.footer{
+    padding: 30px 0;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #282F35;
 }
