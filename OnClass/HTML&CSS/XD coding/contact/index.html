@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cresta Design | お問い合わせ</title>
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/contact.css">
 </head>
@@ -13,7 +13,7 @@
     <!-- header -->
     <header class="header">
         <div class="header-inner">
-            <h1 class="site-title"><a href="./">Cresta Design</a></h1>
+            <h1 class="site-title"><a href="../">Cresta Design</a></h1>
             <nav class="header-nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#">Concept</a></li>
@@ -23,9 +23,9 @@
                 </ul>
             </nav>
             <button class="burger-btn">
-                <span class="bar-top"></span>
-                <span class="bar-mid"></span>
-                <span class="bar-bottom"></span>
+                <span class="bar bar-top"></span>
+                <span class="bar bar-mid"></span>
+                <span class="bar bar-bottom"></span>
             </button>
         </div>
     </header>
@@ -33,50 +33,50 @@
 
     <!-- main -->
     <main>
-        <!-- page-titel -->
+        <!-- page-title -->
         <div class="page-title-wrapper">
             <h1 class="page-title">Contact</h1>
-            <div class="page-title-bottom"></div>
+            <div class="page-title-bottom">Contact us</div>
         </div>
-        <!-- //page-titel -->
+        <!-- //page-title -->
         <!-- form -->
         <form action="" class="form-wrapper">
             <ul class="form-list">
                 <li class="form-item">
-                    <label for="" class="form-label">お問い合わせ内容</label>
+                    <label for="" class="form-label">お問い合わせ内容</labal>
                     <ul class="checkbox-list">
                         <li class="checkbox-item">
-                            <input type="checkbox" class="checkbox">
-                            <label for="">資料請求</label>
+                            <input type="checkbox" class="checkbox" id="document">
+                            <label for="document">資料請求</label>
                         </li>
                         <li class="checkbox-item">
-                            <input type="checkbox" class="checkbox">
-                            <label for="">お電話でのご相談を希望</label>
+                            <input type="checkbox" class="checkbox" id="phone">
+                            <label for="phone">お電話でのご相談</label>
                         </li>
                         <li class="checkbox-item">
-                            <input type="checkbox" class="checkbox">
-                            <label for="">申し込み</label>
+                            <input type="checkbox" class="checkbox" id="application">
+                            <label for="application">申し込み</label>
                         </li>
                     </ul>
                 </li>
-                <li class="fom-item">
+                <li class="form-item">
                     <label for="" class="form-label">担当者名</label>
+                    <input type="text" class="input-text">
                 </li>
-                <input type="text">
-                <li class="fom-item">
+                <li class="form-item">
                     <label for="" class="form-label">電話番号</label>
+                    <input type="text" class="input-text">
                 </li>
-                <input type="text">
-                <li class="fom-item">
+                <li class="form-item">
                     <label for="" class="form-label">メールアドレス</label>
-                <input type="text">
+                    <input type="text" class="input-text">
                 </li>
-                <li class="fom-item">
+                <li class="form-item">
                     <label for="" class="form-label">その他</label>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </li>
             </ul>
-            <input type="submit" class="submit-btn">
+            <input type="submit" value="Submit" class="submit-btn">
         </form>
         <!-- //form -->
     </main>
@@ -87,5 +87,7 @@
         <small>&copy;cresta.design all rights reserved</small>
     </footer>
     <!-- //footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
