@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   position: fixed;
   top: 0;
@@ -51,5 +52,40 @@
   text-align: center;
   line-height: 37px;
   box-shadow: 0 3px 6px rgb(0, 0, 0);
+}
+
+.main {
+  background-image: url(../images/楕円形\ 1.svg);
+  background-position: top -150px right -120px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.main-inner {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 20px;
+}
+.main-copy {
+  text-align: left;
+}
+.main-copy h2 {
+  font-size: 32px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.main-copy p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.main-img {
+  position: absolute;
+  right: 15%;
+  top: 15%;
+  z-index: 1000;
 }
 /*# sourceMappingURL=style.css.map */
