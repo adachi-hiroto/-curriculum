@@ -52,7 +52,7 @@
 .contact-btn{
     width: 155px;
     height: 37px;
-    background: linear-gradient(90deg, #FA41CC, #6020B0);;
+    background: linear-gradient(90deg, #FA41CC, #6020B0);
     color: #fff;
     border-radius: 10px;
     display: block;
@@ -60,6 +60,33 @@
     line-height: 37px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 16);
     text-decoration: none;
+}
+
+// hamburger
+.hamburger{
+    display: none;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    span{
+        display: block;
+        position: absolute;
+        content: "";
+        color: #000;
+        background-color: #000;
+        border-radius: 5px;
+        width: 40px;
+        height: 5px;
+        top: 15px;
+        left: 10px;
+    }
+    span:nth-child(2){
+        top: 28px;
+    }
+    span:nth-child(3){
+        top: 41px;
+    }
 }
 
 // front-page
@@ -283,7 +310,8 @@
             p{
                 font-size: 18px;
                 font-weight: bold;
-                line-height: 1.5;
+                line-height: 1.8;
+                color: #333333;
             }
             time{
                 position: absolute;
@@ -291,6 +319,7 @@
                 bottom: 10px;
                 font-size: 16px;
                 font-weight: bold;
+                color: #333333;
             }
         }
     }
@@ -298,6 +327,7 @@
 
 // works
 .works{
+    margin-bottom: 91px;
     &-ttl{
         margin-top: 40px;
         font-size: 32px;
@@ -312,8 +342,196 @@
         }
     }
     &-inner{
-        max-width: 1024px;
         margin-left: auto;
         margin-right: auto;
+    }
+    &-list{
+        display: flex;
+    }
+    &-item{
+        width: 322px;
+        border-radius: 10px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 16);
+        img{
+            width: 100%;
+            height: 210px;
+        }
+        .works-copy{
+            padding: 19px 16px 0 18px;
+            box-sizing: border-box;
+            p{
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 1.8;
+                color: #333333;
+            }
+            ul{
+                margin-top: 30px;
+                li{
+                    list-style: none;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    color: #333333;
+                }
+            }
+        }
+    }
+}
+
+// contact
+.contact{
+    background: linear-gradient(90deg, #05A5FA, #63FBD7, #67FFD6);
+    padding: 40px 20px;
+    color: #fff;
+    text-align: center;
+    &-ttl{
+        font-size: 32px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 40px;
+        color: #fff;
+        span{
+            font-size: 16px;
+            display: block;
+            margin-top: 20px;
+        }
+    }
+    &-inner{
+        margin-left: auto;
+        margin-right: auto;
+        p{
+            margin-bottom: 44px;
+            line-height: 1.8;
+        }
+        // form
+        .form-list{
+            max-width: 878px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 31px 65px 35px;
+            background-color: #fff;
+        }
+        ul{
+            text-align: left;
+            .form-item{
+                max-width: 783px;
+                width: 100%;
+                margin-bottom: 27px;
+                list-style: none;
+                .form-label{
+                    display: block;
+                    margin-bottom: 39px;
+                    font-weight: bold;
+                    color: #333333;
+                    span{
+                        background-color: #0C449B;
+                        color: #fff;
+                        margin-left: 23px;
+                        padding: 4px 16px 6px;
+                        border-radius: 8px;
+                        font-size: 14px;
+                    }
+                }
+                .form-text{
+                    max-width: 499px;
+                    width: 100%;
+                    line-height: 43px;
+                    background-color: #EEFBFB;
+                    outline: none;
+                    appearance: none;
+                    -webkit-appearance: none;
+                    border: none;
+                }
+                textarea{
+                    resize: none;
+                    max-width: 783px;
+                    width: 100%;
+                    line-height: 1.5;
+                    background-color: #EEFBFB;
+                    border-color: #fff;
+                    padding: 8px;
+                }
+            }
+            .checkbox-style{
+                text-align: center;
+                margin-bottom: 30px;
+                list-style: none;
+                input{
+                    appearance: none;
+                    -webkit-appearance: none;
+                    position: absolute;
+                }
+                .checkbox{
+                    position: relative;
+                    content: "";
+                    width: 20px;
+                    height: 20px;
+                    border: #707070 1px solid;
+                    vertical-align: middle;
+                }
+                .checkbox-label{
+                    color: #333333;
+                }
+                label{
+                    cursor: pointer;
+                }
+                .checkbox:checked{
+                    background-color: #333333;
+                }
+            }
+            .form-item:last-child{
+            margin-bottom: 0;
+            }
+        }
+        .submit-btn{
+            width: 155px;
+            height: 37px;
+            background: linear-gradient(90deg, #FA41CC, #6020B0);
+            border: none;
+            color: #fff;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 37px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 16);
+            text-decoration: none;
+        }
+    }
+}
+
+// footer
+footer{
+    padding: 40px 20px;
+    text-align: center;
+    a{
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333333;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        gap: 29px;
+        margin-top: 21px;
+        margin-bottom: 52px;
+        a{
+            font-size: 16px;
+            font-weight: bold;
+            color: #333333;
+        }
+    }
+    small{
+        font-size: 14px;
+        color: #333333;
+    }
+}
+
+@media screen and (max-width:768px){
+    .hamburger{
+        display: block;
+    }
+    .header-nav ,
+    .contact-btn{
+        display: none;
     }
 }
