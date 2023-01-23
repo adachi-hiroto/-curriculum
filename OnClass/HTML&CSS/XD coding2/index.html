@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./sass/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./sass/style.css">
     <title>ユアコーディング</title>
 </head>
 <body>
     <header class="header">
         <div class="header-inner">
-            <a href=""><img src="./images/logo.png" alt="ユアコーディング"></a>
-            <h1 class="header-ttl">ユアコーディング</h1>
+            <div class="header-ttl">
+                <a href=""><img src="./images/logo.png" alt="ユアコーディング"></a>
+                <h1 class="header-ttl-copy">ユアコーディング</h1>
+            </div>
             <nav class="header-nav">
-                <ul>
-                    <li><a href="">特徴</a></li>
-                    <li><a href="">価格</a></li>
-                    <li><a href="">お問い合わせ</a></li>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="">特徴</a></li>
+                    <li class="nav-item"><a href="">価格</a></li>
+                    <li class="nav-item"><a href="">お問い合わせ</a></li>
                 </ul>
             </nav>
             <div class="header-btn">
@@ -58,13 +61,13 @@
         </section>
         <section class="feature">
             <div class="feature-inner">
-                <h2 class="feature-ttl">
+                <h2 class="feature-ttl" data-aos="fade-up">
                     ユアコーディング3つの特徴<span>FEATURE</span>
                 </h2>
-                <h2 class="feature-heading">高速コーディング</h2>
+                <h2 class="feature-heading" data-aos="fade-up">高速コーディング</h2>
                 <div class="feature-box">
-                    <figure><img src="./images/cto.png" alt="特徴1"></figure>
-                    <div>
+                    <figure data-aos="fade-up"><img src="./images/cto.png" alt="特徴1"></figure>
+                    <div data-aos="fade-up">
                         <h3>
                             コーディングに特化したフリーランスのため、<br>
                             スピード感を持った開発が可能。
@@ -77,9 +80,9 @@
                         </p>
                     </div>
                 </div>
-                <h2 class="feature-heading">高品質</h2>
-                <div class="feature-box">
-                    <div>
+                <h2 class="feature-heading" data-aos="fade-up">高品質</h2>
+                <div class="feature-box box2">
+                    <div data-aos="fade-up">
                         <h3>
                             正しいマークアップで、<br>
                             内部SEOに強いコーディングを<br>
@@ -91,13 +94,13 @@
                             きちんとコーディングを行うため、納品後も安心です。
                         </p>
                     </div>
-                    <figure><img src="./images/building_website.png" alt="特徴1"></figure>
+                    <figure data-aos="fade-up"><img src="./images/building_website.png" alt="特徴1"></figure>
                 </div>
                 
-                <h2 class="feature-heading">迅速なレスポンス</h2>
+                <h2 class="feature-heading" data-aos="fade-up">迅速なレスポンス</h2>
                 <div class="feature-box">
-                    <figure><img src="./images/new_message.png" alt="特徴1"></figure>
-                    <div>
+                    <figure data-aos="fade-up"><img src="./images/new_message.png" alt="特徴1"></figure>
+                    <div data-aos="fade-up">
                         <h3>
                             原則いただいたメッセージは、<br>
                             業務時間内であれば6時間以内に<br>
@@ -116,8 +119,8 @@
         
         <section class="price">
             <div class="price-inner">
-                <h2 class="price-ttl">価格<span>PRICE</span></h2>
-                    <table>
+                <h2 class="price-ttl" data-aos="fade-up">価格<span>PRICE</span></h2>
+                    <table data-aos="fade-up">
                         <tr>
                             <th>HTMLコーディングトップページ</th>
                             <td>30.000円〜</td>
@@ -141,8 +144,8 @@
         
         <section class="faq">
             <div class="faq-inner">
-                <h2 class="faq-ttl">よくある質問<span>FAQ</span></h2>
-                <dl class=>
+                <h2 class="faq-ttl" data-aos="fade-up">よくある質問<span>FAQ</span></h2>
+                <dl data-aos="fade-up">
                     <dt>
                         デザインから一貫してお願いすることは可能でしょうか
                     </dt>
@@ -176,8 +179,8 @@
 
         <section class="blog">
             <div class="blog-inner">
-                <h2 class="blog-ttl">ブログ<span>BLOG</span></h2>
-                <div class="blog-list">
+                <h2 class="blog-ttl" data-aos="fade-up">ブログ<span>BLOG</span></h2>
+                <div class="blog-list" data-aos="fade-up">
                     <article class="blog-item">
                         <img src="./images/austin-distel-wawEfYdpkag-unsplash.png" alt="">
                         <div class="blog-copy">
@@ -205,8 +208,8 @@
         
         <section class="works">
             <div class="works-inner">
-                <h2 class="works-ttl">制作実績<span>WORKS</span></h2>
-                <ul class="works-list"> 
+                <h2 class="works-ttl" data-aos="fade-up">制作実績<span>WORKS</span></h2>
+                <ul class="works-list" id="js-slider" data-aos="fade-up"> 
                     <li class="works-item">
                         <img src="./images/works3.png" alt="">
                         <div class="works-copy">
@@ -352,5 +355,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
