@@ -6,22 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gulpを使用する</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./sass/style.scss">
+    <link rel="stylesheet" href="./sass/style.css">
 
 </head>
 <body>
-    <h1>Gulpを使用する</h1>
-    <!-- q1 -->
-    <h2>require()どう⾔った時に使いますか？</h2>
-    <p>require('プラグイン名')で使⽤。モジュール化されたJSファイルをNode.jsから効率よく読み込んで利用できるようにしたい時。</p>
-    <!-- q2 -->
-    <h2>gulp.task()どう使いますか？また、どう⾔った仕様ですか？</h2>
-    <p></p>
-    <!-- q3 -->
-    <h2>タスクの対象はどのようにして指定すれば良いですか？</h2>
-    <!-- q4 -->
-    <h2>対象のタスクに対して複数処理をしたい時はどうすれば良いですか？</h2>
-    <!-- q5 -->
-    <h2>watch機能はどう⾔ったものですか？</h2>
+    <header class="header">
+        <h1 class="header-ttl">Gulpを使用する</h1>
+    </header>
+    <main class="main">
+        <!-- q1 -->
+        <div class="main-content">
+            <h2>require()どう⾔った時に使いますか？</h2>
+            <p class="main-content-copy">require('プラグイン名')で使⽤。モジュール化されたJSファイルをNode.jsから効率よく読み込んで利用できるようにしたい時。</p>
+        </div>
+        <!-- q2 -->
+        <div class="main-content">
+            <h2>gulp.task()どう使いますか？また、どう⾔った仕様ですか？</h2>
+            <div class="main-content-copy">
+                <p>
+                    タスクを定義するためのメソッド。gulp.task(name[, deps], fn)<br>
+                    gulp.task('タスク名', 実⾏される処理)タスク名と実⾏する処理を記述。
+                </p>
+                <ul>
+                    <li>name {String}: 実行するタスク名。[gulp タスク名]コマンドでタスクの実行が可能となる。</li>
+                    <li>deps {Array}: タスクを実行する前に完了しておきたい別のタスク名。タスクを実行する順番を保証したいときに指定。</li>
+                    <li>fn: 実行するタスク内容。一般的に「gulp.src().pipe(someplugin())」の形式で書いていきます。</li>
+                </ul>
+            </div>
+        </div>
+        <!-- q3 -->
+        <div class="main-content">
+            <h2>タスクの対象はどのようにして指定すれば良いですか？</h2>
+            <p class="main-content-copy">gulp.src()でタスクの対象となるファイルを取得します。複数のファイルも指定可能。</p>
+        </div>
+        <!-- q4 -->
+        <div class="main-content">
+            <h2>対象のタスクに対して複数処理をしたい時はどうすれば良いですか？</h2>
+            <p class="main-content-copy">
+                複数指定する場合は*.scssとすれば対象のディレクトリのすべてのSassを⾒てくれます。<br>
+                また、sass/**/*.scssのようにパスを指定するとsassディレクトリ直下のすべてのディレクトリを⾒ます。
+            </p>
+        </div>
+        <!-- q5 -->
+        <div class="main-content">
+            <h2>watch機能はどう⾔ったものですか？</h2>
+            <p class="main-content-copy">
+                watch機能はwatch('監視対象'、'実⾏するタスク')で使⽤。
+                ファイルの更新を監視して自動的に Gulp のタスクを実行してくれる機能。
+            </p>
+        </div>
+    </main>
 </body>
 </html>
