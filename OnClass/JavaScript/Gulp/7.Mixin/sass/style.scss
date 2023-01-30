@@ -58,16 +58,16 @@
 
 // スコープの制限
 .main-box {
-    @mixin boxContent($value: 300px, $margin: 0 auto, $padding: 0) {
-        width: $value;
-        height: $value;
-        margin: $margin;
-        padding: $padding;
-   }
-    .sub-box {
-        @include boxContent(100px, 0 50px, 20px);
-            background: #0011ff;
-        }
+ @mixin boxContent($value: 300px, $margin: 0 auto, $padding: 0) {
+ width: $value;
+ height: $value;
+ margin: $margin;
+ padding: $padding;
+}
+ .sub-box {
+ @include boxContent(100px, 0 50px, 20px);
+ background: #0011ff;
+ }
 }
 // エラーを起こす
 // .sub-box {
