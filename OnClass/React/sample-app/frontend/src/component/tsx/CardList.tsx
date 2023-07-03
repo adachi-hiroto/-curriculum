@@ -1,0 +1,1 @@
+import { NewsApp } from "../hooks/dataApi";
