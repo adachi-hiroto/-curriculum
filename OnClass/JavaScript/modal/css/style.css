@@ -11,12 +11,12 @@ body {
 }
 
 
-.container {
+.container{
   padding: 2rem;
 }
 
 
-.button {
+.button{
   background: tomato;
   border: 0;
   border-radius: .25rem;
