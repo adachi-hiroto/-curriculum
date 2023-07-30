@@ -18,9 +18,11 @@ function initGallery (root) {
     // サムネイルのクリックイベントハンドラ
     function onClickThumbnail () {
       // まずメイン画像をすべて隠す
-      mainImages.forEach(image => /* Insert code here... */);
+      mainImages.forEach(image => {
+        image.classList.remove('active');
+      });
       // 表示するメイン画像のIDを取得する
-      const id = /* Insert code here... */;
+      const id = 
       // 表示するメイン画像を取得する
       const target = /* Insert code here... */;
       // 要素があったら表示する
