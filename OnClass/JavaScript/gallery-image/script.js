@@ -22,15 +22,17 @@ function initGallery (root) {
         image.classList.remove('active');
       });
       // 表示するメイン画像のIDを取得する
-      const id = 
+      const id = this.getAttribute('data-gallery-image')
       // 表示するメイン画像を取得する
-      const target = /* Insert code here... */;
+      const target = document.getElementById(id);
       // 要素があったら表示する
-      /* Insert code here... */
+      if(id){
+        target.classList.add('active');
+      }
     }
     
     thumbnails.forEach(tn => {
-      tn.addEventListener('click', /* Insert code here... */);
+      tn.addEventListener('click', onClickThumbnail/* Insert code here... */);
     });
   }
   
