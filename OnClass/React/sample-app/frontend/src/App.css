@@ -1,0 +1,17 @@
+.container{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container h2{
+  font-size: 45px;
+  margin-bottom: 12px;
+}
+
+.container input{
+  min-width: 360px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
