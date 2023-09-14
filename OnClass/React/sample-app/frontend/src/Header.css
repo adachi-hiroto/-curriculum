@@ -1,0 +1,9 @@
+.header-wrapper{
+    width: auto;
+    margin: 20px auto;
+}
+.header-wrapper button{
+    margin: 0 15px;
+    padding: 10px 20px;
+    font-size: 20px;
+}

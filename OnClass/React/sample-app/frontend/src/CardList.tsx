@@ -3,7 +3,14 @@ import './CardList.css';
 
 const CardList = () => {
   return (
-    <div className='card-wrapper'>CardList</div>
+    <div className='card-wrapper'>
+        <div>CardList</div>
+        <div>CardList</div>
+        <div>CardList</div>
+        <div>CardList</div>
+        <div>CardList</div>
+        <div>CardList</div>
+    </div>
   )
 }
 
