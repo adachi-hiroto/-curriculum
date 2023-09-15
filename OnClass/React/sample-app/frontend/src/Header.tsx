@@ -2,40 +2,39 @@ import React, { useEffect, useState } from 'react'
 import './Header.css';
 
 const Header = () => {
-    // const[news,setNews] = useState('');
-    const[id,setid] = useState('topstories'); 
+    // const[newsId,setNewsID] = useState([]);
+    const[category,setcategory] = useState('topstories'); 
     
-    const getTopId = () => {
-        setid('topstories') ;
+    const getTopCategory = () => {
+        setcategory('topstories') ;
     };
 
-    const getNewId = () => {
-        setid('newstories') ;
+    const getNewCategory = () => {
+        setcategory('newstories') ;
     };
 
-    const getBestId = () => {
-        setid('beststories') ;
+    const getBestCategory = () => {
+        setcategory('beststories') ;
     };
 
     useEffect(() => {
-        fetch(`https://hacker-news.firebaseio.com/v0/${id}`,{
-            mode:'cors'
-        })
+        fetch(`https://hacker-news.firebaseio.com/v0/${category}`)
         .then(resp => resp.json())
         .then(data => {
             console.log(data);
+            // setNewsId(data);
         })
         .catch(error => {
             console.log(error);
         });
-    },[id]);
+    },[category]);
 
   return (
     <div className='header-wrapper'>
-        <p>{id}です</p>
-        <button onClick={getTopId}>TOP</button>
-        <button onClick={getNewId}>NEW</button>
-        <button onClick={getBestId}>BEST</button>
+        <p>{category}です</p>
+        <button onClick={getTopCategory}>TOP</button>
+        <button onClick={getNewCategory}>NEW</button>
+        <button onClick={getBestCategory}>BEST</button>
     </div>
   )
 };
