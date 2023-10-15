@@ -5,11 +5,6 @@ const CardList = () => {
   return (
     <div className='card-wrapper'>
         <div>CardList</div>
-        <div>CardList</div>
-        <div>CardList</div>
-        <div>CardList</div>
-        <div>CardList</div>
-        <div>CardList</div>
     </div>
   )
 }
