@@ -1,13 +1,22 @@
 import React, { useContext } from 'react'
-import { handleCategoryContext } from '../../App'
+import { handleCategoryContext } from '../../App';
+import './category.css';
 
+type Props = {
+  children: string
+}
 
-const CategoryButton = ({children}) => {
-    const { category , handleCategory } = useContext(handleCategoryContext)
+const CategoryButton: React.FC<Props> = ( { children } ) => {
+  const { category , handleCategory } = useContext(handleCategoryContext)
     
   return (
     <div>
-      <button onClick={() => handleCategory(children)}>{children}</button>
+      <button
+        className = {category === children ? 'clicked' : 'unclicked'} 
+        onClick={() => handleCategory(children as string)}
+        >
+          {children}
+        </button>
     </div>
   )
 }

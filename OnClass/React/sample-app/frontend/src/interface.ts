@@ -1,6 +1,8 @@
+
+
 export const Base_Url =  'https://hacker-news.firebaseio.com/v0'
 
-export interface Card{
+export type CardItem = {
     by:string
     id:number
     time:number
@@ -8,7 +10,9 @@ export interface Card{
     url:string
 }
 
+export type Cards = CardItem[]
 
-export interface Category {
-    [key:string]:string
-  }  
+export type HandleCategoryContextType = {
+    category: string
+    handleCategory: (param: string) => void
+}
