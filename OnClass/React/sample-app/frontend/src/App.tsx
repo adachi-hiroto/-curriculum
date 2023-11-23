@@ -14,7 +14,7 @@ const App: React.FC = () => {
   const [category,setCategory] = useState(categories[0]);
   const [newsIDs,setNewsIDs] = useState([]) ;
   const [cards,setCards] = useState([]);
-  
+
   // カテゴリーのAPIを取得する
   useEffect(() => {
     const Category_Url = (`${Base_Url}/${category}stories.json`);
@@ -22,31 +22,34 @@ const App: React.FC = () => {
     fetch(Category_Url)
     .then(resp => resp.json())
     .then(data => {
-      console.log("カテゴリー")
+      // console.log("カテゴリー")
      setNewsIDs(data);
-    })
-    .catch(error => {
+    }).catch(error => {
      console.log(error);
     });
   },[category]);
   
+  const newsID = newsIDs.slice(0,1);
+  console.log(newsID);
+
   useEffect(() => {
-    const Card_Url = (`${Base_Url}/item/${newsIDs}.json`);
+    const Card_Url = (`${Base_Url}/item/${newsID}.json`);
+
+    // console.log(Card_Url);
 
     fetch(Card_Url)
     .then(resp => resp.json())
     .then(data => {
-      console.log("カード")
+      console.log(data)
      setCards(data);
-    })
-    .catch(error => {
+    }).catch(error => {
      console.log(error);
     });
-  },[category]);
+  },[newsID]);
 
   // const fetchCard = async () => {
   //   try {
-  //     const Card_Url = `${Base_Url}/item/${newsIDs}.json`
+  //     const Card_Url = `${Base_Url}/item/${newsID}.json`
   //     const response = await window.fetch(Card_Url)
   //     const cardData = await response.json()
   //     setCards(cardData.id)
@@ -61,6 +64,7 @@ const App: React.FC = () => {
     <div className="container">
       <h2>NEWS</h2>
       <div>
+        <div></div>
         <handleCategoryContext.Provider
           value={{
             category: category,
