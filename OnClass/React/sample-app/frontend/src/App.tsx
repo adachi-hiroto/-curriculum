@@ -1,4 +1,4 @@
-import React, { FC, createContext, useEffect, useState } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 import './App.css';
 import { categories } from './components/Category/categories';
 import CategoryList from './components/Category/CategoryList';
