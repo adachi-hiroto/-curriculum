@@ -4,7 +4,7 @@ import './category.css';
 
 type Props = {
   children: string
-}
+};
 
 const CategoryButton: React.FC<Props> = ( { children } ) => {
   const { category , handleCategory } = useContext(handleCategoryContext)

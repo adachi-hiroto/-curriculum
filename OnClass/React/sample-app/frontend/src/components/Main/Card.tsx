@@ -3,7 +3,7 @@ import { CardItem } from '../../interface'
 
 type Props = {
   cardItem: CardItem
-}
+};
 
 const Card: React.FC<Props> = ({cardItem}) => {
   return (
