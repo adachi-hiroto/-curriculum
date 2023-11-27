@@ -1,4 +1,4 @@
-import { PostItem } from './interface'
+import { PostItem } from './hooksinterface'
 const URL_HEAD = 'https://hacker-news.firebaseio.com/v0'
 
 // 非同期処理に使う関数群
