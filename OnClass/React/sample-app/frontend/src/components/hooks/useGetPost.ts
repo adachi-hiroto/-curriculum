@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Category, PostItem } from './interface'
+import { Category, PostItem } from './hooksinterface'
 import { createPosts } from './getAsyncPosts'
 
 // Appに必要な情報をまとめて渡す。非同期処理のための副作用フックも含んでいる。
