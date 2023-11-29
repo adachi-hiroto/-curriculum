@@ -2,6 +2,7 @@ import React from 'react'
 import TabsSelect from './TabsSelect'
 import { useGetPosts } from '../hooks/useGetPost'
 import NewsLists from './NewsLists'
+import "./tsx.css";
 
 const Main: React.FC = () => {
   const { textCategory, categories, postDatas, isLoading, setCategory } = useGetPosts()

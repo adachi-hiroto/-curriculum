@@ -1,5 +1,6 @@
 import React from 'react'
 import { PostItem } from '../hooks/hooksinterface'
+import "./tsx.css";
 
 
 interface PostsProps {
@@ -20,11 +21,11 @@ const NewsLists: React.FC<PostsProps> = ({ isLoading, postDatas }: PostsProps) =
         return(
           <div key={post.id}>
             <div className='card'>
+              <h2 className='card_title'>title: {post.title}</h2>
               <div className='card_container'>
-                <h2 className='card_title'>{post.title}</h2>
                 <p>by:{post.by}</p>
+                <a href={post.url} target='blank'>詳細</a>
               </div>
-              <a href={post.url} target='blank'>詳細</a>
             </div>
           </div>
         )
