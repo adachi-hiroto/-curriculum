@@ -96,3 +96,22 @@ body{
 .works-title h4{
     margin-bottom: 5px;
 }
+
+/* contact.css */
+.contact-container{
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* fotter.css */
+footer{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+footer small{
+    width: 100%;
+    margin: 0 auto;
+    font-size: small;
+}
