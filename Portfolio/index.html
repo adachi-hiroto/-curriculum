@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
+    <header class="header-container">
         <h2>ADACHI</h2>
         <nav>
-            <ul>
+            <ul class="nav-container">
                 <li>about</li>
                 <li>work</li>
                 <li>contact</li>
@@ -18,57 +19,70 @@
         </nav>
         <!-- <button></button> -->
     </header>
-    <main>
+    <main class="main-container">
         <!-- LP -->
-        <div>
+        <div class="lp-container">
             <h1>ADAHI HIROTO PRTOFOLIO</h1>
         </div>
         <!-- about -->
-        <section>
-            <div>
+        <section class="section-container">
+            <div class="section-title">
                 <h2>about</h2>
                 <h3>私について</h3>
             </div>
-            <div>
-                <!-- image -->
+            <div class="about-content">
+                <p>ああああああああああああああああああああああああ</p>
             </div>
-            <div>
+            <div class="about-button">
                 <button>view more</button>
             </div>
         </section>
         <!-- works -->
-        <section>
-            <h2>works</h2>
-            <h3>制作物</h3>
-            <div>
-                <ul>
-                    <li class="works-list">
-                        <div class="works-img">
-                            <img src="./image/works/オフィスデザイン会社.png" alt="オフィスデザイン会社">
-                        </div>
-                        <h4>オフィスデザイン会社（仮想）</h4>
-                        <p>website | 自主制作</p>
-                    </li>
-                    <li class="works-list">
-                        <div class="works-img">
-                            <img src="./image/works/オフィスデザイン会社.png" alt="オフィスデザイン会社">
-                        </div>
-                        <h4>web制作会社（仮想）</h4>
-                        <p>website | 自主制作</p>
-                    </li>
-                    <li class="works-list">
-                        <div class="works-img">
-                            <img src="./image/works/オフィスデザイン会社.png" alt="オフィスデザイン会社">
-                        </div>
-                        <h4>ニュースサイト（仮想）</h4>
-                        <p>website | 自主制作</p>
-                    </li>
-                </ul>
+        <section class="works-container">
+            <div class="section-container">
+                <div class="section-title">
+                    <h2>works</h2>
+                    <h3>制作物</h3>
+                </div>
+                <div class="works-content">
+                    <ul class="works-list">
+                        <a  href="file:///Users/adachihiroshihi/Documents/curriculum/OnClass/HTML&CSS/XD%20coding/index.html">
+                            <li class="works-item">
+                                <img src="./image/works/オフィスデザイン会社.png" alt="オフィスデザイン会社">
+                                <div class="works-title">
+                                    <h4>オフィスデザイン会社（仮想）</h4>
+                                    <p>website | 自主制作</p>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="file:///Users/adachihiroshihi/Documents/curriculum/OnClass/HTML&CSS/XD%20coding2/index.html">
+                            <li class="works-item">
+                                <img src="./image/works/web制作会社.png" alt="web制作会社">
+                                <div class="works-title">
+                                    <h4>web制作会社（仮想）</h4>
+                                    <p>website | 自主制作</p>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="works-item">
+                                <img src="./image/works/オフィスデザイン会社.png" alt="オフィスデザイン会社">
+                                <div class="works-title">
+                                    <h4>ニュースサイト（仮想）</h4>
+                                    <p>website | 自主制作</p>
+                                </div>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </section>
             </div>
-        </section>
         <!-- contact -->
-        <section>
-            <h2>contact</h2>
+        <section class="section-container">
+            <div class="section-title">
+                <h2>contact</h2>
+                <h3>連絡先</h3>
+            </div>
             <div></div>
         </section>
     </main>
