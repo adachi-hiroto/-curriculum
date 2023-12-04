@@ -12,6 +12,15 @@ body{
     justify-content: space-between;
     position: fixed;
 }
+.header-logo{
+    margin: 20px 30px;
+}
+.header-logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+}
 .nav-container{
     margin-right: 20px;
     display: flex;
@@ -30,6 +39,9 @@ body{
 }
 
 /* header.css hover */
+.header-logo a:hover{
+    color: grey;
+}
 .nav-container li a:hover{
     color: grey;
 }
@@ -88,9 +100,6 @@ body{
 }
 
 /* works.css */
-.works-container{
-    background-color: rgb(238, 237, 237);
-}
 .works-content{
     width: 100%;
     margin: 15px auto;
@@ -103,10 +112,15 @@ body{
     grid-template-rows: auto;
     gap: 15px;
 }
+.works-list a{
+    text-decoration: none;
+}
 .works-item{
     width: 100%;
     margin: 0 auto;
+    padding: 5px 0;
     list-style: none;
+    box-shadow: 5px 5px 5px rgb(219, 216, 216);
 }
 .works-item img{
     width: 100%;
@@ -116,6 +130,15 @@ body{
 }
 .works-title h4{
     margin-bottom: 5px;
+    color: black;
+}
+.works-title p{
+    color: grey;
+}
+
+/* works.css:hover */
+.works-item:hover{
+    box-shadow: 10px 10px 10px rgb(87, 86, 86);
 }
 
 /* contact.css */
