@@ -20,8 +20,18 @@ body{
 .nav-container li{
     margin: 20px 30px;
 }
+.nav-container li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
 .nav-button{
     display: none;
+}
+
+/* header.css hover */
+.nav-container li a:hover{
+    color: grey;
 }
 
 /* main.css */
@@ -35,15 +45,19 @@ body{
     height: 500px;
     background-image: url(../image/LPimg.jpg);
     background-color: aqua;
-    justify-content: center;
+    justify-content: last baseline;
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .lp-container h1{
-    font-size: 45px;
+    font-size: 50px;
+    margin-left: 50px;
+    line-height: 80px;
 }
-
+.br1{
+    margin-left: 30px;
+}
 /* 各section共通 */
 .section-container{
     width: 90%;
