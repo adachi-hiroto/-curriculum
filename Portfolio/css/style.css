@@ -73,7 +73,7 @@ body{
 /* 各section共通 */
 .section-container{
     width: 90%;
-    margin: 20px auto;
+    margin: 50px auto;
 }
 .section-title{
     width: 100%;
@@ -91,12 +91,13 @@ body{
 /* about.css */
 .about-content{
     width: 100%;
-    margin: 20px auto;
+    margin: 50px auto;
     text-align: center;
 }
 .about-content p{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 100;
+    line-height: 5rem;
 }
 .about-button{
     width: 100%;
@@ -131,18 +132,18 @@ body{
 }
 .works-list{
     width: 100%;
-    margin: 20px auto;
+    margin: 30px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    gap: 15px;
+    gap: 20px;
 }
 .works-list a{
     text-decoration: none;
 }
 .works-item{
     width: 100%;
-    margin: 0 auto;
+    margin: 5px auto;
     padding: 5px 0;
     list-style: none;
     box-shadow: 5px 5px 5px rgb(219, 216, 216);
@@ -215,9 +216,21 @@ footer small{
         top: 48px;
     }
 
+    /* about */
+    .about-content p{
+        font-size: 18px;
+        font-weight: 100;
+        line-height: 2rem;
+    }
+    .about-button{
+        justify-content: center;
+    }
+
     /* works */
     .works-list{
+        width: 90%;
         display: block;
+        margin: 20px auto;
     }
     .works-item{
         margin-top: 20px;
