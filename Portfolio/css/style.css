@@ -33,6 +33,7 @@ body{
     text-decoration: none;
     color: black;
     font-weight: bold;
+    font-size: 20px;
 }
 .hamburger-menu{
     display: none;
@@ -56,20 +57,17 @@ body{
     width: 100%;
     height: 500px;
     background-image: url(../image/LPimg.jpg);
-    background-color: aqua;
     justify-content: last baseline;
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .lp-container h1{
-    font-size: 50px;
+    font-size: 60px;
     margin-left: 50px;
-    line-height: 80px;
+    line-height: 100px;
 }
-.br1{
-    margin-left: 30px;
-}
+
 /* 各section共通 */
 .section-container{
     width: 90%;
@@ -82,10 +80,12 @@ body{
     align-items: end;
 }
 .section-title h2{
-    font-size: 40px;
+    font-size: 50px;
 }
 .section-title h3{
     margin: 0 0 5px 10px;
+    color: gray;
+    font-weight: normal;
 }
 
 /* about.css */
@@ -160,6 +160,7 @@ body{
 }
 .works-title p{
     color: grey;
+    margin: 5px 0;
 }
 
 /* works.css:hover */
@@ -189,8 +190,27 @@ footer small{
 /* responsive */
 @media (max-width: 820px){
     /* header */
-    .nav-container{
+    .header-nav{
         display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #657b8d;
+    }
+    .nav-container{
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .nav-container li{
+        margin-top: 40px;
+    }
+    .nav-container li a{
+        color: white;
+        font-size: 40px;
     }
     .hamburger-menu{
         display: block;
@@ -214,6 +234,41 @@ footer small{
     }
     .hamburger-menu span:nth-child(2){
         top: 48px;
+    }
+    
+    /* hamburger click */
+    .hamburger-menu.cross .bar-top{
+        transform: rotate(45deg) translate(8px,8px);
+        transition: .3s;
+        top: 20px;
+    }
+    .hamburger-menu.cross .bar-mid{
+        opacity: 0;
+    }
+    .hamburger-menu.cross .bar-bottom{
+        transform: rotate(-45deg) translate(8px,-8px);
+        transition: .3s;
+        top: 42px;
+    }
+    body.noscroll{
+        overflow: hidden;
+    }
+
+    /* section共通 */
+    .section-title h2{
+        font-size: 40px;
+    }
+    .section-title h3{
+        margin: 0 0 5px 10px;
+        color: gray;
+        font-weight: normal;
+    }
+
+    /* lp */
+    .lp-container h1{
+        font-size: 50px;
+        margin-left: 50px;
+        line-height: 80px;
     }
 
     /* about */
