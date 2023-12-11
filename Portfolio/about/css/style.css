@@ -60,7 +60,7 @@ main{
 }
 .section-title{
     width: 100%;
-    margin-top: 3rem;
+    padding: 50px 0;
     display: flex;
     justify-content: left;
     align-items: end;
@@ -215,27 +215,46 @@ footer small{
     .hamburger-menu span:nth-child(2){
         top: 48px;
     }
-
+    
     /* hamburger click */
-    .hamburger-menu.cross:nth-child(0){
+    .hamburger-menu.cross .bar-top{
         transform: rotate(45deg) translate(8px,8px);
         transition: .3s;
+        top: 20px;
     }
-    .hamburger-menu.cross:nth-child(1){
+    .hamburger-menu.cross .bar-mid{
         opacity: 0;
     }
-    .hamburger-menu.cross:nth-child(2){
+    .hamburger-menu.cross .bar-bottom{
         transform: rotate(-45deg) translate(8px,-8px);
         transition: .3s;
+        top: 42px;
     }
     body.noscroll{
         overflow: hidden;
     }
 
+    .main-container{
+        width: 100%;
+    }
+
+    /* section共通 */
+    .section-title h2{
+        font-size: 40px;
+    }
+    .section-title h3{
+        margin: 0 0 5px 10px;
+        color: gray;
+        font-weight: normal;
+    }
+
     /* about */
+    .about-title h2{
+        font-size: 40px;
+    }
     .about-content p{
-        font-size: 19px;
-        font-weight: 100;
+        font-size: 16px;
+        font-weight: bold;
         line-height: 3rem;
     }
 
@@ -261,5 +280,6 @@ footer small{
     }
     .skills-item p{
         margin: 0 auto;
+        font-size: 20px;
     }
 }
