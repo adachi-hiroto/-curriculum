@@ -164,6 +164,9 @@ body{
     color: grey;
     margin: 5px 0;
 }
+.url-text{
+    font-size: 11px;
+}
 
 /* works.css:hover */
 .works-item:hover{
@@ -341,6 +344,10 @@ footer small{
     .works-item{
         margin-top: 20px;
     }
+    .url-text{
+        font-size: 7px;
+    }
+    
 
     /* contact */
     .contact-list h4{
