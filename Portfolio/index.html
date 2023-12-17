@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./about/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Corben:700" rel="stylesheet">
 </head>
 <body id="home">
@@ -48,8 +49,56 @@
             <div class="about-content fadeIn">
                 <p>お客様の要望・ニーズを理解し、<br>エンドユーザーへ届くようにカタチにする。</p>
             </div>
-            <div class="about-button">
-                <button><a href="./about/index.html">view more</a></button>
+            <div class="section-container">
+                <div class="section-title">
+                    <h2>Profile</h2>
+                    <h3>自己紹介</h3>
+                </div>
+                <div class="profile-content">
+                    <div class="profile-name fadeInTrigger">
+                        <p>足立 裕飛 - Hiroto Adachi</p>
+                    </div>
+                    <div class="profile-item fadeInTrigger">
+                        <p>1999年岩手県生まれ。
+                        <br>前職は、高齢者施設の事務員として、資料の管理や利用者の方が楽しめるような行事やレクリエーションを担当。</p>
+                        <p>前職でExcelの関数やマクロを使用するうちにIT業界に興味を持つ。また趣味の旅行のために色々な旅館・ホテルのホームページを見るうちにフロントエンドエンジニアを目指すようになり、勉強を開始。</p>
+                        <!-- <p>今は色々な旅館・ホテルのホームページを検索し、エンドユーザーへ魅力が届くような工夫を学習。</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="section-container">
+                <div class="section-title">
+                    <h2>Skills</h2>
+                    <h3>スキル</h3>
+                </div>
+                <div class="skills-content">
+                    <ul class="skills-list">
+                        <li class="skills-item fadeInTrigger">
+                            <img src="./image/skills/html5.svg" alt="html5">
+                            <p>HTML5</p>
+                        </li>
+                        <li class="skills-item fadeInTrigger">
+                            <img src="./image/skills/css3.svg" alt="css3">
+                            <p>CSS3</p>
+                        </li>
+                        <li class="skills-item fadeInTrigger">
+                            <img src="./image/skills/javascript.svg" alt="javascript">
+                            <p>Javascript</p>
+                        </li>
+                        <li class="skills-item fadeInTrigger">
+                            <img src="./image/skills/typescript-icon.svg" alt="typescript">
+                            <p>Typescript</p>
+                        </li>
+                        <li class="skills-item fadeInTrigger">
+                            <img src="./image/skills/react.svg" alt="react">
+                            <p>React</p>
+                        </li>
+                        <li class="skills-item fadeInTrigger">
+                            <img src="./image/skills/github-icon.svg" alt="github">
+                            <p>Github</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <!-- works -->
@@ -68,7 +117,7 @@
                                     <h4>レストランサイト（仮想）</h4>
                                     <p>website | 自主制作</p>
                                     <p>skill : html / css / javascript</p>
-                                    <p class="url-text">https://adachi-hiroto.github.io/curriculum/OnClass/HTML&CSS/responsive/index.html</p>
+                                    <p class="url-text"><a href="https://github.com/adachi-hiroto/curriculum/tree/main/OnClass/HTML%26CSS/responsive">https://github.com/adachi-hiroto/curriculum/tree/main/OnClass/HTML%26CSS/responsive</a></p>
                                 </div>
                             </li>
                         </a>
@@ -79,7 +128,7 @@
                                     <h4>web制作会社（仮想）</h4>
                                     <p>website | 自主制作</p>
                                     <p>skill : html / sass / javascript</p>
-                                    <p class="url-text">https://adachi-hiroto.github.io/curriculum/OnClass/HTML&CSS/XD%20coding2/index.html</p>
+                                    <p class="url-text"><a href="https://github.com/adachi-hiroto/curriculum/tree/main/OnClass/HTML%26CSS/XD%20coding">https://github.com/adachi-hiroto/curriculum/tree/main/OnClass/HTML%26CSS/XD%20coding</a></p>
                                 </div>
                             </li>
                         </a>
@@ -90,7 +139,7 @@
                                     <h4>オフィスデザイン会社（仮想）</h4>
                                     <p>website | 自主制作</p>
                                     <p>skill : html / css / javascript</p>
-                                    <p class="url-text">https://adachi-hiroto.github.io//curriculum/OnClass/HTML&CSS/XD%20coding/index.html</p>
+                                    <p class="url-text"><a href="https://github.com/adachi-hiroto/curriculum/tree/main/OnClass/HTML%26CSS/XD%20coding2">https://github.com/adachi-hiroto/curriculum/tree/main/OnClass/HTML%26CSS/XD%20coding2</a></p>
                                 </div>
                             </li>
                         </a>
@@ -101,16 +150,16 @@
                                     <h4>ニュースサイト（仮想）</h4>
                                     <p>website | 自主制作</p>
                                     <p>skill : React / typescript</p>
-                                    <p class="url-text"></p>
+                                    <p class="url-text"><a href="https://github.com/adachi-hiroto/curriculum/tree/main/OnClass/React/sample-app">https://github.com/adachi-hiroto/curriculum/tree/main/OnClass/React/sample-app</a></p>
                                 </div>
                             </li>
                         </a>
                     </ul>
                 </div>
-            </section>
             </div>
+        </section>
         <!-- contact -->
-        <section id="contact" class="section-container">
+        <!-- <section id="contact" class="section-container">
             <div class="section-title">
                 <h2>contact</h2>
                 <h3>連絡先</h3>
@@ -122,12 +171,12 @@
                         <p>個人メールへの連絡は<a href="mailto:" target="_blank">こちら</a>をクリック</p>
                     </li>
                     <li>
-                        <h4>株式会社SKpromotion</h4>
+                        <h4>株式会社S-crew</h4>
                         <p>会社への連絡は<a href="https://www.skp1.co.jp/" target="_blank">こちら</a>をクリック</p>
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
     <footer>
         <small>@ADACHI HIROTO</small>

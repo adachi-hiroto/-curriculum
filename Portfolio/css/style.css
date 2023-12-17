@@ -137,7 +137,6 @@ body{
     margin: 30px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
     gap: 20px;
 }
 .works-list a{
