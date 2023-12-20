@@ -1,4 +1,17 @@
-$('.center').slick({
+// ハンバーガーメニュー
+$('.hamburger-menu').on('click',function(){
+    $('.nav-container').fadeToggle(300);
+    $(this).toggleClass('cross');
+    $('body').toggleClass('noscroll');
+});
+$('.nav-list').on('click',function(){
+    $('.nav-container').fadeToggle(300);
+    $('.humburger-manu').toggleClass('cross');
+    $('body').toggleClass('noscroll');
+});
+
+// slide
+$('#slider').slick({
     centerMode: true,
     centerPadding: '60px',
     slidesToShow: 3,
@@ -23,15 +36,3 @@ $('.center').slick({
       }
     ]
   });
-
-// ハンバーガーメニュー
-$('.hamburger-menu').on('click',function(){
-    $('.nav-container').fadeToggle(300);
-    $(this).toggleClass('cross');
-    $('body').toggleClass('noscroll');
-});
-$('.nav-list').on('click',function(){
-    $('.nav-container').fadeToggle(300);
-    $(this).toggleClass('cross');
-    $('body').toggleClass('noscroll');
-});

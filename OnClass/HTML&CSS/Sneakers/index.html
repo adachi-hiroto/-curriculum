@@ -5,24 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneakers</title>
     <link rel="icon" href="./images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <img src="./images/logo.svg" alt="">
+        <a href=""><img src="./images/logo.svg" alt=""></a>
         <nav class="nav-container">
-            <ul class="nav-list">
-                <li class="nav-item">PICK UP</li>
-                <li class="nav-item">FEATURE</li>
-                <li class="nav-item">CONTACT</li>
-            </ul>
-            <ul class="sns-list">
-                <li>Twitter</li>
-                <li>facebook</li>
-                <li>instagram</li>
-            </ul>
+            <div class="nav-content">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#pickup">PICK UP</a></li>
+                    <li class="nav-item"><a href="#feature">FEATURE</a></li>
+                    <li class="nav-item"><a href="#contact">CONTACT</a></li>
+                </ul>
+                <ul class="sns-list">
+                    <li class="sns-item"><a href="#">Twitter</a></li>
+                    <li class="sns-item"><a href="#">facebook</a></l i>
+                    <li class="sns-item"><a href="#">instagram</a></li> 
+                </ul>
+            </div>
         </nav>
         <button class="hamburger-menu">
             <span class="bar-top"></span>
@@ -35,9 +38,9 @@
         <div class="video-container">
             <video src="./images/video.mp4" loop autoplay muted playsinline></video>
         </div>
-        <section class="section-container">
+        <section class="section-container" id="pickup">
                 <h2 class="section-title">PICK UP</h2>
-                <ul class="gallery-images">
+                <ul class="gallery-images" id="slider">
                     <li>
                         <img src="./images/pickup1.jpg" alt="pickup1">
                     </li>
@@ -68,7 +71,7 @@
                 </ul>
         </section>
 
-        <section class="section-container">
+        <section class="section-container"  id="feature">
             <h2 class="section-title">FEATURE</h2>
                 <ul class="feature-list">
                     <li class="feature-item">
@@ -161,7 +164,7 @@
                 </ul>
         </section>
 
-        <section class="section-container section-contact">
+        <section class="section-container section-contact" id="contact">
             <h2 class="section-title">CONTACT</h2>
             <div class="contact-container">
                 <div class="contact-text">
@@ -208,7 +211,7 @@
         <small>© Sneakers</small>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
