@@ -6,7 +6,7 @@ $('.hamburger-menu').on('click',function(){
 });
 $('.nav-container').on('click',function(){
     $('.header-nav').fadeToggle(300);
-    $(this).toggleClass('cross');
+    $('.hamburger-menu').toggleClass('cross');
     $('body').toggleClass('noscroll');
 });
 

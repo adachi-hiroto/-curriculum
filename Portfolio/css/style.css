@@ -230,7 +230,7 @@ footer{
 footer small{
     width: 100%;
     margin: 0 auto;
-    font-size: small;
+    font-size: 8px;
 }
 
 /* fedein */
@@ -287,6 +287,7 @@ footer small{
         margin: 20px 20px 0 0;
         background: transparent;
         border: transparent;
+        transition: .3s;
     }
     .hamburger-menu span{
         display: block;
@@ -297,11 +298,16 @@ footer small{
         top: 27px;
         border-radius: 2px;
     }
-    .hamburger-menu span:nth-child(1){
-        top: 38px;
+    .hamburger-menu .bar-top{
+        top: 30px;
+        transition: .3s;
     }
-    .hamburger-menu span:nth-child(2){
+    .hamburger-menu .bar-mid{
+        top: 39px;
+    }
+    .hamburger-menu .bar-bottom{
         top: 48px;
+        transition: .3s;
     }
     
     /* hamburger click */
