@@ -59,6 +59,7 @@ body{
     background-image: url(../image/LPimg.jpg);
     justify-content: last baseline;
     align-items: center;
+    text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -358,6 +359,12 @@ footer small{
     .about-button{
         justify-content: center;
     }
+    .profile-name p{
+        font-size: 18px;
+    }
+    .profile-item p{
+        font-size: 12px;
+    }
 
     /* works */
     .works-list{
@@ -366,10 +373,11 @@ footer small{
         margin: 20px auto;
     }
     .works-item{
+        height: 300px;
         margin-top: 20px;
     }
-    .url-text{
-        font-size: 7px;
+    .url-text p{
+        font-size: 8px;
     }
     
 
