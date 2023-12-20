@@ -1,6 +1,7 @@
 {
   "name": "frontend",
-  "homepage": "/app/news-app",
+  "homepage": "https://github.com/adachi-hiroto/curriculum/tree/main/OnClass/React/sample-app",
+  "deploy": "gh-pages main -d build",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,6 +19,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
