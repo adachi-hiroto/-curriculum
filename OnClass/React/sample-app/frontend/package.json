@@ -1,6 +1,6 @@
 {
   "name": "frontend",
-  "homepage": "https://github.com/adachi-hiroto/curriculum/tree/main/OnClass/React/sample-app",
+  "homepage": "https://adachi-hiroto.github.io//curriculum/OnClass/React/sample-app",
   "deploy": "gh-pages main -d build",
   "version": "0.1.0",
   "private": true,

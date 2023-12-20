@@ -93,38 +93,59 @@ body{
 /* about.css */
 .about-content{
     width: 100%;
-    margin: 50px auto;
+    margin: 30px auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
 }
 .about-content p{
     font-size: 30px;
-    font-weight: 100;
-    line-height: 5rem;
-}
-.about-button{
-    width: 100%;
-    display: flex;
-    justify-content: end;
-}
-.about-button button{
-    background: transparent;
-    width: 200px;
-    height: 50px;
-    border-radius: 30px;
-}
-.about-button button a{
-    font-size: 20px;
-    text-decoration: none;
-    color: black;
+    font-weight: bolder;
+    line-height: 3rem;
 }
 
-/* about:hover */
-.about-button button:hover{
-    background: gray;
-    cursor: pointer;
+/* profile.css */
+.profile-content{
+    width: 100%;
+    margin: 40px auto;
 }
-.about-button button:hover a{
-    color: white;
+.profile-name{
+    text-align: center;
+}
+.profile-name p{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.profile-item{
+    width: 60%;
+    margin: 0 auto;
+}
+.profile-item p{
+    margin-top: 3rem;
+    line-height: 2rem;
+    font-size: 18px;
+}
+
+/* skills */
+.skills-content{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.skills-list{
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.skills-item{
+    width: 100%;
+    height: auto;
+    list-style: none;
+    vertical-align: middle;
+}
+.skills-item img{
+    height: 200px;
 }
 
 /* works.css */
@@ -134,6 +155,7 @@ body{
 }
 .works-list{
     width: 100%;
+    height: 100%;
     margin: 30px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -144,17 +166,18 @@ body{
 }
 .works-item{
     width: 100%;
-    height: 100%;
-    margin: 5px auto;
-    padding: 5px 0;
+    height: 400px;
     list-style: none;
     box-shadow: 0 0 5px 5px rgb(219, 216, 216);
 }
 .works-item-container{
+    width: 100%;
     border-bottom: solid 1px grey;
 }
-.works-item-container img{
+.works-item-container a img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .works-title{
     margin: 10px 0;
@@ -167,14 +190,27 @@ body{
 .works-title p{
     color: grey;
     margin: 5px 0;
+    font-size: 12px;
+}
+.git-area{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.git-area img{
+    width: 20px;
+    height: 20px;
 }
 .url-text{
-    position: relative;
-    top: 10px;
     width: 100%;
     height: 100%;
-    font-size: 12px;
     text-align: center;
+}
+.url-text p{
+    width: 100%;
+    font-size: 11px;
+    line-height: 1rem;
 }
 
 /* works.css:hover */
@@ -182,38 +218,7 @@ body{
     opacity: 0.5;
 }
 .url-text:hover{
-    background-color: #657b8d;
     color: aqua;
-}
-
-/* contact.css */
-.contact-list h4{
-    font-size: 25px;
-}
-.contact-list{
-    width: 100%;
-    margin: 10px auto;
-}
-.contact-list li{
-    text-align: center;
-    list-style: none;
-    margin-bottom: 2rem;
-    padding: 1rem;
-}
-.contact-list li p{
-    padding-left: 2rem;
-    margin-top: 2rem;
-    font-size: 20px;
-}
-.contact-list li p a{
-    text-decoration: none;
-    color: blue;
-    font-weight: bolder;
-}
-
-/* contact hover */
-.contact-list li p a:hover{
-    color: grey;
 }
 
 /* fotter.css */
