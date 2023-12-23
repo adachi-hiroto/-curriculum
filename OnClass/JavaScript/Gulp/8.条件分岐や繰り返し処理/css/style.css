@@ -1,0 +1,91 @@
+.is-float {
+  float: left;
+}
+
+.bg-color {
+  width: 100px;
+  height: 100px;
+}
+
+.bg-color {
+  background-color: blue;
+}
+
+.through-sample {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+.through-sample-10 {
+  margin: 10px;
+}
+
+.through-sample-20 {
+  margin: 20px;
+}
+
+.through-sample-30 {
+  margin: 30px;
+}
+
+.to-sample {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+.to-sample-10 {
+  margin: 10px;
+}
+
+.to-sample-20 {
+  margin: 20px;
+}
+
+.while-sample-20 {
+  margin: 20px;
+}
+
+.while-sample-10 {
+  margin: 10px;
+}
+
+.bg-color {
+  background: #acc1ed;
+}
+
+.bg-color {
+  background: #dc7668;
+}
+
+.bg-color {
+  background: #71d0f2;
+}
+
+.header-bg-color {
+  background: #acc1ed;
+}
+
+.main-bg-color {
+  background: #dc7668;
+}
+
+.footer-bg-color {
+  background: #71d0f2;
+}
+
+.main-box {
+  width: 200px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: blue;
+}
+
+.sub-box {
+  width: 200px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: red;
+}
+/*# sourceMappingURL=style.css.map */
