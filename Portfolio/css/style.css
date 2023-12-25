@@ -55,9 +55,9 @@ body{
 .lp-container{
     display: flex;
     width: 100%;
-    height: 500px;
+    height: 800px;
     margin: 0 auto;
-    background-image: url(../image/LPimg.jpg);
+    background-image: url(../image/LPimg.jpeg);
     justify-content: last baseline;
     align-items: center;
     background-repeat: no-repeat;
@@ -66,7 +66,7 @@ body{
 .lp-container h1{
     font-size: 60px;
     margin: 0 auto;
-    line-height: 100px;
+    line-height: 10rem;
     font-family: 'Corben',cursive;
 }
 
@@ -77,10 +77,11 @@ body{
 }
 .section-title{
     width: 100%;
-    padding: 50px 0;
+    padding: 30px 20px;
     display: flex;
     justify-content: left;
     align-items: end;
+    border-radius: 50px;
 }
 .section-title h2{
     font-size: 50px;
@@ -110,6 +111,17 @@ body{
     width: 100%;
     margin: 40px auto;
 }
+.profile-img{
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+.profile-img img{
+    width: 200px;
+    height: 100%;
+    border-radius: 50px;
+}
 .profile-name{
     text-align: center;
 }
@@ -130,13 +142,13 @@ body{
 /* skills */
 .skills-content{
     width: 100%;
-    margin: 0 auto;
+    margin: 40px auto;
     text-align: center;
 }
 .skills-list{
     width: 100%;
     display: grid;
-    gap: 20px;
+    gap: 30px;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 }
 .skills-item{
@@ -266,7 +278,7 @@ body{
     margin: 30px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
 }
 .works-list a{
     text-decoration: none;
@@ -340,6 +352,71 @@ footer small{
     font-size: 8px;
 }
 
+/* page-top */
+#page-top a{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background:#942D2F;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase; 
+    text-decoration: none;
+    font-size:0.6rem;
+    transition:all 0.3s;
+  }
+  
+  #page-top a:hover{
+    background: #777;
+  }
+  
+  /*リンクを右下に固定*/
+  #page-top {
+    position: fixed;
+    right: 10px;
+    bottom:10px;
+    z-index: 2;
+      /*はじめは非表示*/
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  
+  /*　左の動き　*/
+  
+  #page-top.LeftMove{
+    animation: LeftAnime 0.5s forwards;
+  }
+  
+  @keyframes LeftAnime{
+    from {
+      opacity: 0;
+    transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+    transform: translateX(0);
+    }
+  }
+  
+  /*　右の動き　*/
+  
+  #page-top.RightMove{
+    animation: RightAnime 0.5s forwards;
+  }
+  @keyframes RightAnime{
+    from {
+      opacity: 1;
+    transform: translateX(0);
+    }
+    to {
+      opacity: 1;
+    transform: translateX(100px);
+    }
+  }
+
 /* fedein */
 .fadeIn{
     animation-name:fadeInAnime;
@@ -365,6 +442,12 @@ footer small{
         width: 100%;
     }
     /* header */
+    header{
+        width: 100%;
+    }
+    .header-container{
+        width: 100%;
+    }
     .header-nav{
         display: none;
         position: fixed;
@@ -450,6 +533,10 @@ footer small{
     }
 
     /* lp */
+    .lp-container{
+        width: 100%;
+        height: 400px;
+    }
     .lp-container h1{
         font-size: 35px;
         margin: 0 auto;
@@ -470,6 +557,11 @@ footer small{
     }
     .profile-item p{
         font-size: 12px;
+    }
+    .profile-img img{
+        width: 100px;
+        height: 70%;
+        border-radius: 50px;
     }
 
     /* skills */
@@ -558,5 +650,9 @@ footer small{
         margin-top: 2rem;
         font-size: 15px;
     }
+    /* page-top */
+  #page-top {
+    right: 50px;
+  }
 
 }
