@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(248, 234, 209);
+}
+
+/* Header.css */
+.AppBar{
+    margin: 0 auto;
+    width: 100%;
+}
+.ToolBar{
+    text-align: center;
+}
+
+/* Main.css */
+.box{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* NewsList.css */
+.card{
+    width: 100%;
+    margin: 15px auto;
+    padding-top: 10px;
+    background-color: white;
+}
+.card_title{
+    font-size: 20px;
+    margin: 5px;
+}
+.card_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 10px;
+}
+.card_container p{
+    width: 80%;
+    color: rgb(116, 114, 114);
+}
+.card_container a{
+    width: 20%;
+    margin: auto;
+}
+
+/* TabsSelect.css */
+.tabs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.tab{
+    width: 15%;
+    margin: 0 5%;
+    font-size: 20px;
+    padding:  8px 0;
+}
