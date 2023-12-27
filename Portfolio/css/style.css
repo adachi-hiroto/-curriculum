@@ -285,7 +285,7 @@ body{
 }
 .works-item{
     width: 100%;
-    height: 480px;
+    height: 100%;
     list-style: none;
     box-shadow: 0 0 5px 5px rgb(219, 216, 216);
 }
@@ -628,8 +628,9 @@ footer small{
         margin: 20px auto;
     }
     .works-item{
-        height: 300px;
-        margin-top: 20px;
+        height: auto;
+        max-height: 500px;
+        margin-top: 50px;
     }
     .url-text p{
         font-size: 8px;
